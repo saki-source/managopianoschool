@@ -1,0 +1,48 @@
+@media screen and (min-width: 1025px) {
+    .feature {
+      .content {
+        &.type1 {
+          margin-right: 10vw;
+          box-shadow: 0 .3vw .2vw 0 #b8bec7;
+          align-items: flex-end;
+          > .title {
+            left: calc(50% + .25em);
+          }
+          > .img-body > img {
+            position: absolute;
+            width: auto;
+            height: 120%;
+            top: -10%;
+            left: 10%;
+          }
+          > .body {
+          }
+        }
+      }
+    }
+  
+    .price-list {
+      .price {
+        width: 22vw;
+        height: 22vw;
+        .background {
+          width: 20vw;
+          height: 20vw;
+        }
+        &:nth-child(2), &:nth-child(4) {
+          .background {
+            background-color: $price-color-1;
+          }
+        }
+        &:nth-child(1), &:nth-child(3) {
+          .background {
+            background-color: $price-color-2;
+          }
+        }
+        .content {
+          $length: (20vw / 2) * math.sqrt(2);
+          height: $length;
+        }
+      }
+    }
+  }

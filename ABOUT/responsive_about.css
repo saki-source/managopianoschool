@@ -1,0 +1,300 @@
+@media screen and (max-width: 1024px) {
+  .feature1 .content > .body {
+    padding-right: 0%;
+  }
+
+  .feature-title {
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: solid 2px #525715;
+    border-bottom: solid 2px #525715;
+    padding: 10px;
+    margin-top: 10%;
+}
+
+  .profile-text p:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+  .profile-top {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+    border-top: solid 2px #525715;
+    border-bottom: solid 2px #525715;
+    padding: 10px;
+}
+
+
+ .profile-content{
+    display: flex;
+    flex-direction: column;
+}
+
+ .profile-image{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4%;
+}
+
+ .profile-image img{
+    margin: 0 auto;
+    /* padding-left: 20%; */
+}
+
+ .profile-text{
+    max-width: 100%;
+    margin: 0 auto;
+    padding-left: 0;
+    display: inline-block;
+    width: 100%
+}
+
+ .profile-text h1 {
+    font-family: Noto Sans JP;
+    font-size: clamp(2.0rem, 4vw, 4.0rem);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 27px;
+    text-align: left;
+}
+
+ .profile-text p{
+    display: block;
+    color: #2C2824;
+    font-family: Noto Sans JP;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: left;
+    width: 100%;
+}
+
+ .text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+  .profile-text .text_detail{
+    display: inline-block;
+    text-align: left;
+}
+  footer .title {
+        color: var(--, #2C2824);
+        font-family: Times New Roman;
+        font-size: clamp(1.5rem, 2vw ,1.8rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 8px;
+        /* padding-top: 45px; */
+        white-space: nowrap;
+    }
+    
+    footer .address {
+      color: var(--, #2C2824);
+      font-family: Noto Sans JP;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding-top: 18px ;
+      white-space: nowrap;
+    }
+    
+    .middle-side {
+    padding-left: 15%;
+    /* padding-top: 35px; */
+    text-align: center;
+    
+    }
+    
+    .menu li {
+    padding-top: 18px;
+    color: var(--, #2C2824);
+    font-family: Times New Roman;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: normal;
+    }
+    
+    /* .mail{
+      width: 34px;
+      height: 34px;
+    } */
+
+    .contact p {
+      color: var(--, #2C2824);
+      font-family: Times New Roman;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding-top: 6px;
+      padding-left: 10px;}
+    
+    /* .facebook{
+      width: 23px;
+      height: 22px;
+    } */
+    
+    .SNS p {
+      color: var(--, #2C2824);
+      font-family: Times New Roman;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      padding-left: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 670px) {
+    .feature1 .content > .title {
+        font-size: 36px;}
+
+
+    .feature1 .content > .body .title{
+        font-size: 18px;
+    }
+
+    .feature1 .content> .body .text {
+        color: #2C2824;
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-top: 15px;
+    }
+
+    .feature1 .content> .body .text p{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .feature2 .content > .title {
+        font-size: 36px;}
+
+    .feature2 .content > .body .title {
+        font-size: 18px;
+    }
+     .feature2 .content> .body .text {
+        color: #2C2824;
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-top: 15px;
+    }
+
+    .feature2 .content> .body .text p{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .feature3 .content > .title {
+        font-size: 36px;}
+
+    .feature3 .content > .body .title{
+            font-size: 18px;
+     }
+
+    .feature3 .content> .body .text {
+        color: #2C2824;
+        font-family: Noto Sans JP;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.5;
+        padding-top: 15px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+
+    .feature3 .content> .body .text p{
+        text-align: center;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .flex-container{
+        display: inline;
+        max-width: 2000px;
+        margin: 0 auto;
+    }
+
+    footer .title {
+        color: var(--, #2C2824);
+        font-family: Times New Roman;
+        font-size: clamp(1.4rem, 2vw ,1.8rem);
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2px;
+        padding-top: 0px;
+        text-align: center;
+      }
+      
+    footer .address {
+        color: var(--, #2C2824);
+        font-family: Noto Sans JP;
+        font-size: 0.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding-top: 18px;
+        white-space: nowrap;
+        text-align: center;
+      }
+      
+      .middle-side {
+        padding-left: 0%;
+        padding-top: 35px;
+        text-align: center;
+      }
+      
+      .right-side {
+        padding-left: 0%;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .left-side{
+        margin-left: 0%;
+        padding-top: 3%;
+      }
+      
+  .contact {
+      display: flex;
+      text-align: center;
+        /* justify-content: center;
+        align-items: center; */
+      }
+      
+  .SNS {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding-top: 0px;
+        /* text-align: center; */
+      }
+    
+}

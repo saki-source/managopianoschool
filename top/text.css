@@ -1,0 +1,189 @@
+/*左から右テキストエフェクト*/
+.leftAnime {
+    opacity: 0;
+    overflow: hidden;
+    display: inline-block;
+  }
+ 
+  .leftAnimeInner {
+    display: inline-block;
+  }
+ 
+/* //次章で追加するクラス */
+  .slideAnimeLeftRight {
+    animation-name: slideTextX100;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-timing-function: ease-in-out;
+  }
+ 
+  @keyframes slideTextX100 {
+    from {
+      transform: translateX(-100%);
+      /*要素を左の枠外に移動*/
+      opacity: 0;
+      animation-timing-function: ease-in-out;
+    }
+ 
+    to {
+      transform: translateX(0);
+      /*要素を元の位置に移動*/
+      opacity: 1;
+      animation-timing-function: ease-in-out;
+    }
+
+
+  }
+ 
+/* //次章で追加するクラス */
+  .slideAnimeRightLeft {
+    animation-name: slideTextX-100;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+  }
+ 
+ 
+  @keyframes slideTextX-100 {
+    from {
+      transform: translateX(100%);
+      /*要素を右の枠外に移動*/
+      opacity: 0;
+    }
+ 
+    to {
+      transform: translateX(0);
+      /*要素を元の位置に移動*/
+      opacity: 1;
+    }
+  }
+
+
+  /*------------------------------------ 以下からふわっと---------------------------------------------------------------- */
+  .fadeIn {
+    animation-name: fadeInAnime;/*1で解説*/
+    animation-fill-mode:backwards;/*2で解説*/
+    animation-duration:4s;/*3で解説*/
+    /* animation-iteration-count:infinite; */
+    animation-timing-function:ease;/*5で解説*/
+    animation-delay: 0.5s;/*6で解説*/
+    animation-direction:normal;/*7で解説*/
+    }
+    
+    /*1で解説*/
+    @keyframes fadeInAnime{
+      0% {
+        opacity: 0;
+      }
+    
+      100% {
+        opacity: 1;
+      }
+    }
+    /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー以下から下からふわっとーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+
+    /*全共通*/
+
+.slide-in {
+	overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+	display: inline-block;
+
+}
+
+/* 上下のアニメーション*/
+.downAnime{
+    opacity: 0;/* 事前に透過0 にして消しておく*/
+}
+
+.slideAnimeDownUp {
+    animation-name:slideTextY100;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY100 {
+    from {
+        transform: translateY(100%);/* 要素を上の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);/* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.slideAnimeUpDown {
+    animation-name:slideTextY-100;
+    animation-duration:0.8s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY-100 {
+    from {
+        transform: translateY(-100%);/* 要素を下の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);/* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+/* ------------------------------------以下から左から右へゆっくりと-------------------------------------------------- */
+
+
+/* -------------------------------画像が下から上に上がってくる----------------------------------- */
+.img4 {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition : all 300ms;
+}
+.img4.scrollin {
+  opacity : 0.5;
+  transform : translate(0, 0);
+}
+
+.img5 {
+  opacity : 0;
+  transform : translate(0, 50px);
+  transition : all 300ms;
+}
+.img5.scrollin {
+  opacity : 0.5;
+  transform : translate(0, 0);
+}
+
+
+
+.button {
+  background-color: var(--unnamed, #63513B);
+  color: #FFF;
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 200;
+  padding: 1vw 5vw;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.button:hover{
+  color: #63513B; 
+  background-color:#FFF;
+} 
+
+
+
+
+
+
+
+

@@ -1,0 +1,873 @@
+body {
+    margin: 0;
+    background: #FEF9F3;
+}
+
+*{
+    box-sizing:border-box;
+}
+
+/* img{
+    max-width: 100%;
+} */
+
+.section-header {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 0.2%;
+    background-color: #FEFBF8;
+    z-index: 9999;
+    justify-content: space-between;
+}
+
+header nav {
+  margin-right: 4%;
+}
+
+header ul {
+    display: flex;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    font-size: 20px;
+    font-family: Times New Roman;
+    gap: 50px;
+    margin-top: 44px;
+}
+
+.logo {
+    font-size: 32px;
+    color: var(--unnamed, #2A5715);
+    font-family: 'Carattere', cursive;
+    position: absolute;
+    left: 10vw;
+    margin-top: 37px;
+}
+
+
+
+.maincopy {
+    margin-top: 15vh;
+    margin-left: 4vw
+}
+
+.maincopy span{
+    color: var(--unnamed, #2C2824);
+    font-family: Noto Sans JP;
+    font-size: clamp(1.0rem, 2vw ,2.0rem);
+    font-weight: Medium;
+    line-height: normal;
+    /* letter-spacing: 20px; */
+    padding-bottom: 24px;
+    white-space: nowrap;
+    letter-spacing: calc((60vw - 5vw * 7) / 25);
+}
+
+
+.maincopy p{
+    font-family: Times New Roman;
+    font-size: clamp(2.0rem, 7vw, 5.2rem);
+    font-weight: bold;
+    /* letter-spacing: 24px; */
+    white-space: nowrap;
+    letter-spacing: calc((60vw - 6vw * 7) / 20);
+}
+   
+
+.img-container{
+    /* border-radius: 60px 60px 60px 60px; */
+}
+
+.img-container  img{
+    border-radius: 3vw;
+    width: 97vw;
+    height: 45vw;
+    margin-left: -1vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-top: 5%;
+}
+
+
+#about{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about_container{
+    background:linear-gradient(to bottom, #F4EDE5 90%, #FEF9F3 10%);
+    width: 96%;
+    margin-top: 4%;
+    position: relative;
+    /* height: 806px; */
+    overflow: hidden
+
+}
+
+.about1 span {
+    color: var(--unnamed, #2C2824);
+    font-family: Times New Roman;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 14.4px;
+    display: block;
+    position: absolute;
+    top: 250px;
+    right: 0vw;
+    transform: rotate(90deg);
+    transform-origin: right top 0;
+}
+
+/* .About{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image:url(./img/ABOUT.png);
+}
+
+.line{
+    position: absolute;
+    top: 75%;
+    right: 1.5vw;
+} */
+
+.custom-hr {
+    width: 200px;
+    border-top: 3px solid #2C2824;
+    transform: rotate(90deg);
+    transform-origin: right top 0;
+    position: absolute;
+    top: 450px;
+    right: 20px;
+}
+
+.about2{
+    text-align: center;
+    /* width: 90%; */
+    margin: 0 auto;
+    max-width: 1180px;
+}
+
+.about2 span {
+    color: var(--unnamed, #2C2824);
+    font-family: Noto Sans JP;
+    font-weight: 500;
+    letter-spacing: 10.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8%;
+    letter-spacing: calc((60vw - 5vw * 7) / 25);
+    font-size: clamp(1.6rem, 2vw, 3.2rem);
+}
+
+.about2 p {
+    color: var(--unnamed, #2C2824);
+    font-family: Noto Sans JP;
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: calc((130vw - 4vw * 7) / 45);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6%;
+    font-size: clamp(0.5rem, 2vw ,1.3rem);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6%;
+}
+
+.about2 .button-container{
+    margin-bottom:8%;
+}
+
+.button {
+    background-color: var(--unnamed, #63513B);
+    color: #FFF;
+    font-family: Noto Sans JP;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    padding: 1vw 5vw;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover{
+    color: #63513B; 
+    background-color:#FFF;
+} 
+
+
+/* .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none; /* デフォルトのリンク装飾を無効化 */
+    /* border: none;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+/* ボタンのスタイルをホバー時に変更 */
+/* .button:hover {
+    background-color: #0056b3;
+} */ 
+
+
+.about2 ul{
+    text-align: center;
+    font-size: 0;
+}
+
+.about2 ul li{
+    display: inline-block;
+    width: 28%;
+    margin: 0 2.5%;
+}
+
+.about2 ul li img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+#lesson {
+    margin-top:18%;
+    position: relative;
+}
+
+/* .lesson_container{
+    max-width: 2000px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+} */
+
+.lesson-flex{
+    display:flex;
+    flex-wrap: nowrap;
+    /* padding-left: 4%; */
+    max-width: 2000px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+h1 {
+    color: var(--unnamed, #2C2824);
+    font-family: Times New Roman;
+    font-size: clamp(3.2rem, 6vw, 10rem);
+    /* font-size: 96px; */
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: calc((60vw - 5vw * 7) / 25);
+    margin-left: 10%;
+}
+
+/* .introduction {
+    margin-top: 18px;
+    margin-left: 60px;
+} */
+
+.introduction p {
+    color: var(--unnamed, #2C2824);
+    font-family: Noto Sans JP;
+    font-size: clamp(0.1rem, 2vw ,1.2rem);
+    font-weight: 500;
+    line-height: 140%;
+    margin-top: 18px;
+    margin-left: 10%;
+}
+
+.img-container3{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 6vw;
+}
+
+.img4 {
+    border-radius: 40px;
+    /* opacity: 0.5; */
+    max-width: 100%;
+    width: 10vw;
+    height:10vw;
+    /* margin-bottom: 20px; */
+}
+
+.img5 {
+    width: 10vw;
+    height: 13vw;
+    border-radius: 40px;
+    opacity: 0.5;
+    margin-left: 2vw;
+}
+
+.price-title{
+    color: #2C2824;
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 64px;
+    font-weight: 400;
+    letter-spacing: 6.4px;
+    margin-top: 4%;
+}
+
+
+.price-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 8%
+}
+
+.price-list .price {
+    position: relative;
+    width: 44vw;
+    height: 44vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price-list .price:not(:first-child) .background {
+     background-color: #EDDDCB;
+     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0 0.6vw 1.5vw 0 #EDDDCB; */
+}
+
+.price-list .price:nth-child(1) .background,
+.price-list .price:nth-child(4) .background {
+    background-color: #B0A18F;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.price-list .price:nth-child(2).background,
+.price-list .price:nth-child(3) .background {
+    background-color: #EDDDCB;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.price-list .price .background {
+    position: absolute;
+    width: 35vw;
+    height: 35vw;
+    transform: rotate(45deg);
+}
+
+.price-list .price .content {
+    width: 100%;
+    height: 24.7487373415vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+    /* padding-bottom: 10%; */
+}
+
+.price-list .price .content1 {
+    padding-bottom: 18%;
+    z-index: 1;
+}
+
+
+
+.price-list .price .content1  .title p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    color: #2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: clamp(0.8rem, 2vw ,2.0rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: calc((60vw - 8vw * 7) / 25);
+}
+
+.price-list .price .content1  .title span{
+    font-size: clamp(0.8rem, 2vw ,1.5rem);
+}
+
+
+
+.price-list .price .content1  .first-price{
+    color:  #2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: clamp(1.8rem, 2vw ,3.2rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* padding-top: 10%; */
+    /* padding-bottom: 5%; */
+}
+
+.price-list .price .content2{
+    padding-bottom: 7%;
+    z-index: 1;
+}
+
+.price-list .price .content2  .title p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    color:  #2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: clamp(0.8rem, 2vw ,1.8rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: calc((60vw - 8vw * 7) / 25);
+}
+
+.price-list .price .content2  .title span{
+    font-size: clamp(0.8rem, 2vw ,1.5rem);
+}
+
+
+.price-list .price .content2  .second-price{
+    color:  #2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: clamp(1.8rem, 2vw ,3.2rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* padding-top: 10%;
+    padding-bottom: 5%; */
+}
+
+.price-list .price .content2 .remark{
+    color:  #2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    /* transform:scale(0.75); */
+    font-size: clamp(0.5rem, 1vw ,1.0rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.price-list .price .content3{
+    padding-bottom: 7%;
+    z-index: 1;
+}
+
+
+
+.price-list .price .content3 .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    color: var #2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: clamp(0.8rem, 2vw ,1.8rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: calc((60vw - 8vw * 7) / 25);
+}
+
+.price-list .price .content3  .third-price{
+    color: var#2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: clamp(1.8rem, 2vw ,3.2rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* padding-top: 10%;
+    padding-bottom: 5%; */
+}
+
+.price-list .price .content3 .remark{
+    color: var #2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: clamp(0.5rem, 1vw ,1.0rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.price-list .price .content4 {
+    padding-bottom: 18%;
+    z-index: 1;
+}
+
+
+
+.price-list .price .content4 .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    color: var#2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: clamp(0.8rem, 2vw ,1.8rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: calc((60vw - 8vw * 7) / 25);
+}
+
+.price-list .price .content4  .forth-price{
+    color: var #2C2824;
+    text-align: center;
+    font-family: Noto Sans JP;
+    font-size: clamp(1.8rem, 2vw ,3.2rem);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /* padding-top: 10%;
+    padding-bottom: 5%; */
+}
+
+
+.attension {
+    width: 525px;
+    height: 200px;
+    background-color: #F1ECE7;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+
+
+.attension .text{
+    color: var(--, #2C2824);
+    font-family: Noto Sans JP;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.8;
+    padding-top: 60px;
+    padding-top: 40px;
+    padding-left: 50px;
+}
+
+
+#contact{
+    background-color: #F4EDE5;
+    margin-top: 10%;
+}
+
+.formrun{
+    display: block;
+    margin: 0 auto;
+}
+
+.section-form {
+    /* padding: 10vh 5vw 10vh 5vw; */
+    max-width: 1070px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+    .section-form h2 {
+    font-family: Times New Roman;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 14.4px;
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 70px;
+  }
+  
+
+  
+  .section-form__message {
+    margin-bottom: 50px;
+  }
+  
+  .section-form__message p {
+    letter-spacing: 0.1rem;
+    line-height: 2.8rem;
+  }
+  
+  .form-group,
+  .form-group__row {
+    padding: 35px 15% 35px 15%;
+    text-align: left;
+    letter-spacing: 0.1rem;
+  }
+
+  .form-group label{
+    font-size: 18px;
+    color: #2C2824;
+  }
+  
+  .form-group:nth-child(9) {
+    border-bottom: #efefef 1px solid;
+    margin-bottom: 55px;
+  }
+  
+  
+  .form-group span.option {
+    display: inline-block;
+    color: #ffffff;
+    background-color: #c4c4c4;
+    font-size: 1.2rem;
+    padding: 2px 6px;
+    margin-right: 10px;
+  }
+  
+  .form-group__row {
+    margin-top: 14px;
+    text-align: left;
+  }
+  
+  .form-check {
+    margin-bottom: 10px;
+  }
+  
+  .form-check:nth-child(1) {
+    margin-top: 13px;
+  }
+  
+  .form-check:nth-child(4) {
+    margin-bottom: -5px;
+  }
+  
+  .form-group__row input {
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+  }
+  
+  .form-group__row label {
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .form-group input {
+    display: block;
+    margin-top: 14px;
+    border: none;
+    background-color: #efefef;
+    height: 45px;
+    width: 100%;
+    padding-left: 13px;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .form-group textarea {
+    display: block;
+    margin-top: 13px;
+    border: none;
+    background-color: #efefef;
+    height: 150px;
+    width: 100%;
+    padding-top: 13px;
+    padding-left: 13px;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+  }
+  
+  .form-group input.fileup {
+    background-color: #ffffff;
+  }
+  
+  /* .form-check__text-danger span,
+  .form-text__danger {
+    display: block;
+    background-color: #ffffff;
+    color: #E83929;
+    margin-top: 13px;
+    padding: 0;
+    font-size: 1.4rem;
+  } */
+  
+  .formrun button {
+    background-color: #63513B;
+    color: #FFF;
+    font-family: Noto Sans JP;
+    font-size: 24px;
+    font-weight: 200;
+    padding: 10px 85px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 145px;
+}
+  
+footer {
+    width: 100%;
+    background: #E7E2DD;
+    padding: 50px 50px;
+    box-sizing: border-box;
+}
+
+.flex-container{
+    display: flex;
+    max-width: 2000px;
+    margin: 0 auto;
+    /* justify-content: space-between; */
+}
+
+.left-side{
+    margin-left: 6%;
+}
+
+footer .title {
+    color: var(--, #2C2824);
+    font-family: Times New Roman;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 18px;
+    /* padding-top: 43px; */
+}
+
+footer .address {
+    color: var(--, #2C2824);
+    font-family: Noto Sans JP;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* padding-top: 10px ; */
+}
+
+.middle-side{
+    padding-left: 15%;
+    /* padding-top: 33px; */
+}
+
+.menu li{
+    padding-top: 20px;
+    color: var(--, #2C2824);
+    font-family: Times New Roman;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.right-side{
+    padding-left:15% ;
+    padding-top: 10px;
+}
+
+
+
+.contact{
+    display: flex;
+}
+.footer_contact{
+    color: var(--, #2C2824);
+    font-family: Times New Roman;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 5px;
+    padding-left: 14px;
+}
+
+.mail{
+    width: 44px;
+    height: 34px;
+    padding-left: 8px;
+}
+
+
+.SNS{
+    display: flex;
+    padding-top: 23px;
+}
+.SNS a{
+    color: var(--, #2C2824);
+    font-family: Times New Roman;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 15px;
+}
+
+.facebook{
+    padding-left: 10px;
+    width: 38px;
+    height: 27px;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1025px) {
+    .price-list .price {
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .price-list .price .background {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .price-list .price:nth-child(2) .background,
+    .price-list .price:nth-child(4) .background {
+        background-color: #B0A18F;
+    }
+
+    .price-list .price:nth-child(1) .background,
+    .price-list .price:nth-child(3) .background {
+        background-color: #EDDDCB;
+    }
+
+    .price-list .price content {
+        height: 14.1421356237vw;
+    }
+
+}
+
+
+
+
+
+
+

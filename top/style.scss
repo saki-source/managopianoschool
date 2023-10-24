@@ -1,0 +1,146 @@
+// Mathモジュールの読み込み
+@use "sass:math";
+
+body {
+  margin: 0;
+}
+
+.hero {
+  img {
+    border-radius: 3vw;
+    width: 97vw;
+    height: 25vw;
+    margin-left: -1vw;
+    object-fit: cover;
+  }
+}
+
+.feature {
+  .content {
+    background-color: rgb(221, 216, 210);
+    border-radius: 2vw;
+    position: relative;
+    padding: 7vw;
+    margin: 5vw 0;
+    box-shadow: 0 2vw 1.5vw 0 #b8bec7;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    > .title {
+      font-size: 1.5em;
+      font-weight: bold;
+      position: absolute;
+      top: -.72em;
+      left: .25em;
+    }
+    > .img-body {
+      width: 60%;
+      img {
+        width: 100%;
+        border-radius: 2vw;
+      }
+    }
+  
+    >.body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        font-size: 1.1em;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      .text {
+        text-align: center;
+        font-size: .1vw;
+        white-space: break-spaces;
+      }
+    }
+  }
+}
+
+$price-color-1: #ebdfd4;
+$price-color-2: #a9a4a0;
+.price-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .price {
+    $width: 35vw;
+    $height: 35vw;
+    position: relative;
+    width: 44vw;
+    height: 44vw;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    // スマホ表示でpriceの最初の要素だけ影がなかったので
+    // 最初の要素以外にだけ影をつけるcss
+    &:not(:first-child) .background {
+      box-shadow: 0 .6vw 1.5vw 0 #808185;
+    }
+    &:nth-child(1), &:nth-child(4) {
+      .background {
+        background-color: $price-color-1;
+      }
+    }
+    &:nth-child(2), &:nth-child(3) {
+      .background {
+        background-color: $price-color-2;
+      }
+    }
+    .background {
+      position: absolute;
+      z-index: -1;
+      width: $width;
+      height: $height;
+      transform: rotate(45deg);
+    }
+    .content {
+      $length: ($width / 2) * math.sqrt(2); // priceのひし形の内側の高さを取得するためにsqrtを使ってますが、別に使わないで見た目それっぽくなるような高さを決め打ちで入れてもらっていいです。
+      width: 100%;
+      height: $length;
+      display: flex;
+      flex-direction: column;
+      
+      font-size: .8em;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        // Priceのレッスン場所(教室とかスタジオとか)がPriceによってあったりなかったりするけど、
+        // 金額の位置は同じなので、これを実現するにはabsoluteで位置を決め打ちするか、
+        // レッスン場所があるときもないときも「個人レッスン(教室)」とかの文字列のheightがおなじになる必要がある
+        // 通話で言ったようになるべくabsoluteは使いたくないので、heightを決め打ちして高さを固定する方法を取る
+        // 今回のサンプルでは、line-heightの初期値がたぶん1.5なので一行の高さは1.5と想定して2行分の高さを確保する
+        // 実際はべつに100pxとかって決め打ちでうまく表示される値にしてくれていいです。
+        height: 1.5em * 2;
+      }
+      .remark {
+        font-size: .5em;
+        // スマホ表示のときの「※別途スタジオ代と講師の交通費をお支払いいただきます」の文字サイズが小さすぎて
+        // 一番小さいfont-sizeより小さいため表現できない
+        // ブラウザの下限より小さいフォントサイズを実現するためにはscaleで調整するしかないので
+        // scaleを使って文字サイズを限界より小さくする
+        transform:scale(0.75);
+      }
+      span {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@import './style-pc.scss';
+
+ 
